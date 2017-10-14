@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+	margin: 0px;
+}
+
+h1, h2, h3
+{
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+header{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: green;
+	color: white;
+	background-image: url(../images/header-bg.jpg);
+	background-size: cover;
+	padding:40px 0;
+
+}
+
+header ul{
+	padding: 0;
+}
+
+h1{
+	font-size: 40px;
+}
+
+header li{
+	margin: 5px;
+	display:inline;
+	text-transform: uppercase;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	}
+
+.sidebar{
+width:40%;/*40% of 1000px = 400px*/
+float:left;
+background-color: orange;
+padding:30px;
+color: white;
+}
+
+.recipes{
+width:60%; /*60% of 1000px = 600px*/
+float:right;
+
+}
+
+article{
+	width: 50%;
+	float: left;
+	padding: 0 20px;
+}
+
+article img{
+	width: 100%;
+} /*for making sure images fit in the parent container*/
+
+footer{
+clear: both; /*to recognize that things are floated*/
+background-color: grey;
+color: white;
+text-align: center;
+padding: 40px 0;
+
+}
+
+
+a { /*to change link styles*/
+	color: white;
+	text-decoration: none; /*get rid of underline*/
+	padding-bottom: 5px;
+}
+
+a:hover{ /*to change style of link when you hover*/
+	border-bottom:1px solid white;
+}
+
+/*To make site responsive on tablets*/
+@media (max-width: 1000px) 
+{
+.sidebar { 
+	display: none;
+ }
+
+.recipes, .container{
+	width:100%;
+}
+
+/*To make site responsive on mobiles*/
+@media (max-width: 600px) 
+
+{
+ article{
+	width:100%;
+}
+
+
+
+
+}
